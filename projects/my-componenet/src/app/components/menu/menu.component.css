@@ -1,0 +1,57 @@
+.navbar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.6rem 1.5rem;
+}
+
+/* Center the navbar items */
+.navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Menu items */
+.nav-link {
+  font-weight: 600; /* Bold text */
+  color: #e0e0e0 !important; /* Slightly lighter than white */
+  padding: 0.5rem 1.2rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+}
+
+/* Active menu item */
+.nav-item.active .nav-link {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: #ffffff !important;
+}
+
+/* Disabled link */
+.nav-link.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Toggler icon styling */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1); /* white toggle icon */
+}
